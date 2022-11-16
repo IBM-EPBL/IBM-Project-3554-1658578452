@@ -10,15 +10,6 @@ deviceId = "1407"
 authMethod = "token"
 authToken = "9585786415"
 
-def myCommandCallback(cmd):
-    print("Command received: %s" % cmd.data['command'])
-    status = cmd.data['command']
-    if status == "lighton":
-        print("led is on")
-    elif status == "lightoff":
-        print("led is off")
-    else:
-        print("please send proper command")
 
 
 try:
@@ -62,6 +53,4 @@ while True:
     publish(data)
     time.sleep(5)
     
-    deviceCli.commandCallback = myCommandCallback
-
 deviceCli.disconnect()
