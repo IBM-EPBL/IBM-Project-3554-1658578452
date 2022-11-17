@@ -33,24 +33,28 @@ def publish(data):
         print("Not connected to IoTF")
 
 while True:
-    data = {'name' : 'Vaigai EXP', 'lat' : 13.0480438,'long' : 79.9288083}#Chennai
+    data = {'name' : 'Vaigai EXP', 'lat' : 17.6387448,'long' : 78.4754336}
     publish(data)
-    time.sleep(5)
+    time.sleep(3)
 
-    data = {'name' : 'Pandiyan EXP', 'lat' : 72.7410979,'long' : 72.7410979}#Mumbai
+    data = {'name' : 'Vaigai EXP', 'lat' : 17.6341908,'long' : 78.4744722}
     publish(data)
-    time.sleep(5)
+    time.sleep(3)
 
-    data = {'name' : 'Pothigai EXP', 'lat' : 22.6763858,'long' : 88.0495278}#Kolkata
+    data = {'name' : 'Vaigai EXP', 'lat' : 17.6340889,'long' : 78.4745052}
     publish(data)
-    time.sleep(5)
+    time.sleep(3)
 
-    data = {'name' : 'Pearl City EXP', 'lat' : 28.6443981,'long' : 76.8130326}#Delhi
+    data = {'name' : 'Vaigai EXP', 'lat' : 17.6248626,'long' : 78.4720259}
     publish(data)
-    time.sleep(5)
+    time.sleep(3)
 
-    data = {'name' : 'Kollam EXP', 'lat' : 9.9179987,'long' : 78.0527826}#Madurai
+    data = {'name' : 'Vaigai EXP', 'lat' : 17.6188577,'long' : 78.4698726}
     publish(data)
-    time.sleep(5)
+    time.sleep(3)
+
+    data = {'name' : 'Vaigai EXP', 'lat' : 17.6132382,'long' : 78.4707318}
+    publish(data)
+    time.sleep(3)
     
 deviceCli.disconnect()
